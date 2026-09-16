@@ -1,0 +1,23 @@
+" === MIT Missing Semester 基础配置 ===
+set nocompatible           " 关闭兼容模式，启用现代 Vim 特性
+syntax on                  " 开启语法高亮
+set shortmess+=I           " 禁用启动时的欢迎乌托邦版权信息
+set number                 " 开启行号
+set relativenumber         " 开启相对行号（方便 5j, 10k 垂直跳跃）
+set laststatus=2           " 底部总是显示状态栏
+set backspace=indent,eol,start " 修复退格键行为，让 Backspace 能正常删缩进和换行
+
+" === 现代编码与缩进规范（极力推荐） ===
+set tabstop=4              " Tab 宽 4 格
+set shiftwidth=4           " 缩进宽 4 格
+set expandtab              " Tab 自动转换为空格
+set autoindent             " 自动对齐上一行缩进
+set hlsearch               " 搜索高亮
+set incsearch              " 边搜边跳
+set ignorecase             " 搜索忽略大小写
+set smartcase              " 有大写时区分大小写
+
+" === CtrlP 插件快捷键与行为设置 ===
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra' " 自动以 git 仓库根目录为搜索范围
