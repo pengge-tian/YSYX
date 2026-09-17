@@ -1,0 +1,3 @@
+# 忽略实验产生的临时测试仓库与克隆的外部网站
+git-security-lab/
+missing-semester-cn.github.io/
