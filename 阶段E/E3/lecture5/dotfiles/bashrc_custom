@@ -1,0 +1,15 @@
+# ============================================================
+# YSYX & Missing Semester 自定义 Shell 配置
+# ============================================================
+
+# 1. 彩色、高可读性的命令提示符 PS1:
+export PS1='\[\033[01;33m\][\t] \[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+
+# 2. 常用开发别名
+alias dc="cd"
+alias ..="cd .."
+alias ysyx="cd ~/Desktop/YSYX/missing-semester"
+alias ga="git add ."
+alias gp="git push"
+alias gs="git status"
+alias ll="ls -la --color=auto"
